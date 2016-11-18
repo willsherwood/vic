@@ -140,10 +140,9 @@ This test requires that a vSphere server is running and available
 
 ## Network mapping gateway invalid
 1. Create with container network mapping
-2. Set container network gateway as <dpg name>:1.1.1.1/24
-3. Set container network gateway as <dpg name>:192.168.1.0/24
-4. Set container network gateway as <wrong name>:192.168.1.0/24
-5. Verify create failed for wrong vsphere network name or gateway is not routable
+2. Set container network gateway as <dpg name>:192.168.1.0/24
+3. Set container network gateway as <wrong name>:1.1.1.1/24
+4. Verify create failed for wrong vsphere network name or gateway is not routable
 
 ## Network mapping IP invalid
 1. Create with container network mapping
