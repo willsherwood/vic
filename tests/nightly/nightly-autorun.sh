@@ -16,7 +16,7 @@
 
 # Get the latest code from vmware/vic repo
 cd ~/go/src/github.com/vmware/vic
-git clean -fd
+sudo git clean -fd
 git fetch https://github.com/vmware/vic master
 git pull
 
