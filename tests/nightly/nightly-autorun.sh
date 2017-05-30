@@ -18,7 +18,6 @@
 cd ~/go/src/github.com/vmware/vic
 git clean -fd
 git fetch https://github.com/vmware/vic master
-git reset --hard origin/master
 git pull
 
 # Kick off the nightly
