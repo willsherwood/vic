@@ -258,6 +258,14 @@ func (t *operations) SetupFirewall(config *tether.ExecutorConfig) error {
 			}).Commit(context.TODO()); err != nil {
 				return err
 			}
+			// Allow FORWARD traffic
+			if err := (&netfilter.Rule{
+				Chain:           netfilter.Forward,
+				Target:          netfilter.Accept,
+				Interface:       ifaceName,
+			}).Commit(context.TODO()); err != nil {
+				return err
+			}
 		}
 	}
 
